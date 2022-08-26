@@ -1,6 +1,29 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@*<RadzenImage Path="https://mpayzweb.azurewebsites.net/static/images/adminpanellogo.png" />
+<RadzenPanelMenu>
+        <RadzenPanelMenuItem Text="General" Icon="home"/>
+        <RadzenPanelMenuItem Text="More" Icon="home"></RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="General" Icon="home"></RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="More" Icon="home"></RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="General" Icon="home"></RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="More" Icon="home"></RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="General" Icon="home"></RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="More" Icon="home"></RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="General" Icon="home"></RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="More" Icon="home"></RadzenPanelMenuItem>
+</RadzenPanelMenu>*@
+
+
+<div >
+    <div class="text-center my-3 border-1">
+        <img src="https://mpayzweb.azurewebsites.net/static/images/adminpanellogo.png"/>
+    </div>
+</div>
+
+
+<div class="top-row ps-3 navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">Mpayz</a>
+            <p class="text-center text-white">Account Balance</p>
+            <p class="text-center text-white">$18.80</p>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -11,17 +34,42 @@
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
+                <span class="oi oi-home" aria-hidden="true"></span> Dashboard
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            <NavLink class="nav-link" href="myhealthcarevault">
+                <span class="oi oi-plus" aria-hidden="true"></span> My Healthcare Vault
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            <NavLink class="nav-link" href="sendmpayz">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Send MPayz
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="requestmpayz" Match="NavLinkMatch.All">
+                <span class="oi oi-arrow-circle-bottom" aria-hidden="true"></span> Request MPayz
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="txnhistory" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Txn History
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="settings" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Settings
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="support" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Support
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="faqs" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> FAQs
             </NavLink>
         </div>
     </nav>
